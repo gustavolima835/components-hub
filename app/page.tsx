@@ -8,10 +8,14 @@ import {
   Sparkles,
   FileCode,
   Palette,
+  CalendarHeart,
+  MapPin,
 } from "lucide-react"
 
 import MemoriesGallery from "./components/memories-gallery"
 import ExpandableCards from "./components/expandable-cards"
+import CulturalEventCard from "./components/cultural-event-card"
+import InteractiveMap from "./components/interactive-map"
 
 interface UIComponentItem {
   id: string
@@ -20,7 +24,6 @@ interface UIComponentItem {
   description: string
   component: React.ComponentType
 }
-
 const componentList: UIComponentItem[] = [
   {
     id: "memories-gallery",
@@ -36,11 +39,27 @@ const componentList: UIComponentItem[] = [
     description: "Cartões animados com transição dinâmica de largura e conteúdo revelado ao passar o cursor.",
     component: ExpandableCards,
   },
+  {
+    id: "cultural-event-card",
+    name: "Cartão de Evento Cultural",
+    category: "Eventos Culturais",
+    description: "Exibe informações resumidas de um evento cultural com imagem de capa e detalhes ao interagir.",
+    component: CulturalEventCard,
+  },
+  {
+    id: "interactive-timeline-map",
+    name: "Mapa Cronológico Interativo",
+    category: "Mapas e Localizações",
+    description: "Um mapa interativo que mostra eventos ao longo do tempo com animações e foco em locais culturais.",
+    component: InteractiveMap,
+  },
 ]
 
 const categoryIcons: Record<string, React.ReactNode> = {
   "Galerias Interativas": <Image className="w-4 h-4 mr-2" />,
   "Experiências Visuais": <Sparkles className="w-4 h-4 mr-2" />,
+  "Eventos Culturais": <CalendarHeart className="w-4 h-4 mr-2" />,
+  "Mapas e Localizações": <MapPin className="w-4 h-4 mr-2" />,
 }
 
 export default function ComponentExplorer() {
