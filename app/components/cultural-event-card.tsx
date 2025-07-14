@@ -7,7 +7,7 @@ export default function CulturalEventCard() {
     <div className="w-[320px] bg-white rounded-lg overflow-hidden shadow-lg">
       <div className="relative h-[200px]">
         <Image
-          src="https://media.licdn.com/dms/image/v2/D5603AQF_Ne8DHcx4ew/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681212017261?e=2147483647&v=beta&t=H_M3b44CScBpE9JZ7Ew_J63YArj2r3l7ixQbPLuXgw4"
+          src="/ferreira.gif"
           alt="Shakespeare & Rock'n Roll performance"
           fill
           className="object-cover"
