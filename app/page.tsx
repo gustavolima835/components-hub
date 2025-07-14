@@ -46,13 +46,13 @@ const componentList: UIComponentItem[] = [
     description: "Exibe informações resumidas de um evento cultural com imagem de capa e detalhes ao interagir.",
     component: CulturalEventCard,
   },
-  {
-    id: "interactive-timeline-map",
-    name: "Mapa Cronológico Interativo",
-    category: "Mapas e Localizações",
-    description: "Um mapa interativo que mostra eventos ao longo do tempo com animações e foco em locais culturais.",
-    component: InteractiveMap,
-  },
+  // {
+  //   id: "interactive-timeline-map",
+  //   name: "Mapa Cronológico Interativo",
+  //   category: "Mapas e Localizações",
+  //   description: "Um mapa interativo que mostra eventos ao longo do tempo com animações e foco em locais culturais.",
+  //   component: InteractiveMap,
+  // },
 ]
 
 const categoryIcons: Record<string, React.ReactNode> = {
