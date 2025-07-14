@@ -62,6 +62,17 @@ const config: Config = {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
+	  fontWeight: {
+        thin: "400",
+        extralight: "400",
+        light: "400",
+        normal: "400",    // já era 400
+        medium: "500",
+        semibold: "600",
+        bold: "700",
+        extrabold: "800",
+        black: "800",     // como você não tem 900, use 800
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
