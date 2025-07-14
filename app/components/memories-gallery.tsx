@@ -118,7 +118,7 @@ export default function MemoriesGallery() {
       <style jsx global>{`
         @keyframes marquee {
           from {
-            transform: translateX(-50%);
+            transform: translateX(50%);
           }
           to {
             transform: translateX(0);
