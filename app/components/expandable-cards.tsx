@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
 const images = [
   {
@@ -46,19 +47,43 @@ export default function ExpandableCards() {
 
   return (
     <div
-      className="flex items-center justify-center h-full p-8 relative bg-cover bg-center bg-no-repeat w-full rounded-2xl"
+      className="flex items-center flex-col gap-8 justify-center h-full relative bg-cover bg-center bg-no-repeat w-full rounded-2xl"
       style={{
         backgroundImage: `url('/images/gradient-background.jpeg')`,
       }}
     >
-      <div className="flex h-[500px] w-full rounded-3xl overflow-hidden gap-2 justify-center">
+      <div className="relative z-10 w-2/3">
+        <div className="flex flex-col justify-between">
+          <div className="flex-1 text-[#292929]">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-2 animate-fade-in">
+              O Espectro Paulistano
+            </h1>
+          </div>
+
+          <div className="animate-fade-in-delay-2 flex flex-row justify-between items-center text-[#292929]">
+            <p className="text-lg md:text-xl leading-snug max-w-2xl animate-fade-in-delay">
+              Os principais eventos prestigiados pela população da cidade de São
+              Paulo, trazidos pela Secretaria Municipal de Cultura
+            </p>
+            <Button
+              variant="outline"
+              size="lg"
+              className="bg-[#292929]/10 border-[#292929]/30 text-[#292929] hover:bg-[#292929]/20 hover:border-[#292929]/50 backdrop-blur-sm transition-all duration-300 px-8 py-3 text-lg font-medium hover:scale-105"
+            >
+              Ver mais
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex h-[500px] w-2/3 rounded-3xl overflow-hidden gap-2 justify-center">
         {images.map((image, index) => (
           <motion.div
             key={image.id}
             className="relative cursor-pointer overflow-hidden rounded-2xl"
             initial={false}
             animate={{
-              width: activeIndex === index ? "30%" : "8%",
+              width: activeIndex === index ? "100%" : "30%",
             }}
             transition={{
               duration: 0.7,
