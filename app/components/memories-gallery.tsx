@@ -6,61 +6,55 @@ import { useMemo } from "react";
 const memories = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3",
+    src: "a.jpg",
     alt: "Família reunida",
     borderColor: "border-pink-400",
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3",
+    src: "b.jpg",
     alt: "Casamento ao pôr do sol",
     borderColor: "border-blue-400",
   },
   {
-    id: 3,
-    src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3",
-    alt: "Show com fogos",
-    borderColor: "border-yellow-400",
-  },
-  {
     id: 4,
-    src: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3",
+    src: "c.webp",
     alt: "Piquenique",
     borderColor: "border-red-400",
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3",
+    src: "f.jpg",
     alt: "Barco",
     borderColor: "border-purple-400",
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-4.0.3",
+    src: "g.jpg",
     alt: "Praia",
     borderColor: "border-green-400",
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1470114716159-e389f8712fda?ixlib=rb-4.0.3",
+    src: "h.jpg",
     alt: "Acampamento",
     borderColor: "border-orange-400",
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3",
+    src: "i.jpg",
     alt: "Balão",
     borderColor: "border-cyan-400",
   },
   {
     id: 9,
-    src: "https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?ixlib=rb-4.0.3",
+    src: "j.jpg",
     alt: "Festival",
     borderColor: "border-indigo-400",
   },
   {
     id: 10,
-    src: "https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-4.0.3",
+    src: "k.jpg",
     alt: "Golfinhos",
     borderColor: "border-amber-400",
   },
@@ -135,6 +129,9 @@ export default function MemoriesGallery() {
           animation-timing-function: linear;
           animation-iteration-count: infinite;
           white-space: nowrap;
+        }
+        .animate-marquee:hover {
+          animation-play-state: paused;
         }
       `}</style>
     </div>
